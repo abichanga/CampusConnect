@@ -1,47 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="12dp"
-    android:background="#EEEEEE"
-    android:layout_marginBottom="8dp">
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textTitle"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Event Title"
-        android:textStyle="bold"
-        android:textSize="16sp" />
+        android:dividerPadding="8dp">
 
-    <TextView
-        android:id="@+id/textFaculty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Faculty/Organizer"
-        android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/textDateTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="2025-11-03 at 10:00 AM"
-        android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/textLocation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Auditorium"
-        android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Event"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
-    <TextView
-        android:id="@+id/textDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Description goes here…"
-        android:textSize="13sp"
-        android:paddingTop="4dp" />
+        <EditText
+            android:id="@+id/inputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Title (e.g. Tech Talk)"
+            android:inputType="text" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/inputDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <EditText
+            android:id="@+id/inputFaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Faculty / Organizer (e.g. SCES)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/inputLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location (e.g. Auditorium)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/inputDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date (e.g. 2025-11-03)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/inputTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time (e.g. 10:00 AM)"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnAddEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Event"
+            android:layout_marginTop="12dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Events"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eventsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+</ScrollView>
