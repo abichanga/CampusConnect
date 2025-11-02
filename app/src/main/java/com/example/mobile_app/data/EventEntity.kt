@@ -1,4 +1,4 @@
-package com.example.campusevents.data
+package com.example.mobile_app.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
