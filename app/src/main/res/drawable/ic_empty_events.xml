@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Calendar icon with empty state -->
+    <path
+        android:fillColor="#E5E7EB"
+        android:pathData="M90,20h-5v-5c0,-2.76 -2.24,-5 -5,-5s-5,2.24 -5,5v5h-30v-5c0,-2.76 -2.24,-5 -5,-5s-5,2.24 -5,5v5h-5c-5.52,0 -10,4.48 -10,10v60c0,5.52 4.48,10 10,10h60c5.52,0 10,-4.48 10,-10v-60c0,-5.52 -4.48,-10 -10,-10zM90,90h-60v-45h60v45z"/>
+
+    <!-- Empty state lines -->
+    <path
+        android:fillColor="#D1D5DB"
+        android:pathData="M40,55h40v5h-40z"/>
+    <path
+        android:fillColor="#D1D5DB"
+        android:pathData="M40,65h25v5h-25z"/>
+</vector>

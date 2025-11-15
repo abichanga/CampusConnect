@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Colors -->
+    <color name="primary">#6B4EFF</color>
+    <color name="primary_dark">#5A3FE6</color>
+    <color name="primary_light">#8B6FFF</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#4A90E2</color>
+    <color name="secondary_dark">#3A7AC2</color>
+
+    <!-- Background -->
+    <color name="background">#F5F7FA</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_tertiary">#9CA3AF</color>
+
+    <!-- Icon Tint -->
+    <color name="icon_tint">#9CA3AF</color>
+
+    <!-- Status Colors -->
+    <color name="success">#10B981</color>
+    <color name="error">#EF4444</color>
+    <color name="warning">#F59E0B</color>
+
+    <!-- Badge Colors -->
+    <color name="badge_rsvpd">#6B4EFF</color>
+    <color name="badge_attending">#4A90E2</color>
+    <color name="badge_attended">#10B981</color>
+
+    <!-- Others -->
+    <color name="image_placeholder">#E5E7EB</color>
+    <color name="divider">#E5E7EB</color>
 </resources>

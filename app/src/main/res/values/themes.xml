@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="Theme.Mobileapp" parent="android:Theme.Material.Light.NoActionBar" />
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Mobileapp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--
+            Customize your theme here. For example:
+            <item name="colorPrimary">@color/my_light_primary</item>
+        -->
+    </style>
 </resources>
