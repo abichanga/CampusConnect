@@ -16,17 +16,35 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Mobileapp">
+
+        <!-- ADMIN MAIN -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Mobileapp">
+            android:name=".AdminMainActivity"
+            android:exported="false" />
+
+        <!-- SIGN UP -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+
+        <!-- LOGIN (LAUNCHER) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- STUDENT MAIN  -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Mobileapp" />
+
     </application>
+
 
 </manifest>
