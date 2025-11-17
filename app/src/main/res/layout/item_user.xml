@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email@example.com"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvUserFaculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faculty"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvUserRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Role: student"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/btnToggleRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make admin"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

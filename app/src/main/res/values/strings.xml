@@ -1,3 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Mobile-app</string>
+    <string name="app_name">Campus Events</string>
+
+    <!-- Navigation -->
+    <string name="nav_events">Events</string>
+    <string name="nav_my_events">My Events</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Events -->
+    <string name="events_title">Upcoming Events</string>
+    <string name="my_events_title">My Events</string>
+    <string name="tab_upcoming">Upcoming Events</string>
+    <string name="tab_past">Past Events</string>
+
+    <!-- Actions -->
+    <string name="action_rsvp">RSVP</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_share">Share</string>
+    <string name="action_add_to_calendar">Add to Calendar</string>
+
+    <!-- Status -->
+    <string name="status_attending">Attending</string>
+    <string name="status_rsvpd">RSVP\'d</string>
+    <string name="status_attended">Attended</string>
+    <string name="status_full">Full</string>
+
+    <!-- Messages -->
+    <string name="msg_rsvp_success">RSVP successful!</string>
+    <string name="msg_rsvp_cancelled">RSVP cancelled</string>
+    <string name="msg_event_full">Event is full</string>
+    <string name="msg_error_loading">Failed to load events</string>
+
+    <!-- Empty States -->
+    <string name="empty_no_events">No events available</string>
+    <string name="empty_no_upcoming">No upcoming events</string>
+    <string name="empty_no_past">No past events</string>
+
+    <!-- Dialog -->
+    <string name="dialog_cancel_rsvp_title">Cancel RSVP</string>
+    <string name="dialog_cancel_rsvp_message">Are you sure you want to cancel your RSVP?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
 </resources>

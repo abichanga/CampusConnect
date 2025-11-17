@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Image -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/eventImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:background="@color/image_placeholder"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/backgrounds/scenic"/>
+
+            <!-- Close Button -->
+            <ImageButton
+                android:id="@+id/closeButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_circle_button"
+                android:src="@drawable/ic_close"
+                android:contentDescription="Close"
+                app:tint="@color/text_primary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Share Button -->
+            <ImageButton
+                android:id="@+id/shareButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_circle_button"
+                android:src="@drawable/ic_share"
+                android:contentDescription="Share"
+                app:tint="@color/text_primary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/closeButton"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/eventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:lineSpacingExtra="4dp"
+                tools:text="Web Development Workshop"/>
+
+            <!-- Date -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_calendar"
+                    app:tint="@color/primary"/>
+
+                <TextView
+                    android:id="@+id/eventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="10dp"
+                    tools:text="Mon, Nov 10 | 2:00 PM - 4:00 PM"/>
+            </LinearLayout>
+
+            <!-- Venue -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_location"
+                    app:tint="@color/primary"/>
+
+                <TextView
+                    android:id="@+id/eventVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="10dp"
+                    tools:text="Computer Science Lab"/>
+            </LinearLayout>
+
+            <!-- Faculty -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_school"
+                    app:tint="@color/primary"/>
+
+                <TextView
+                    android:id="@+id/eventFaculty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="10dp"
+                    tools:text="Faculty of Engineering"/>
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginVertical="20dp"/>
+
+            <!-- Capacity Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Capacity"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <ProgressBar
+                    android:id="@+id/capacityProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:progressTint="@color/primary"
+                    android:progressBackgroundTint="@color/image_placeholder"
+                    android:max="100"
+                    tools:progress="75"/>
+
+                <TextView
+                    android:id="@+id/eventCapacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="12dp"
+                    tools:text="45/50"/>
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginVertical="20dp"/>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About this event"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/eventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="12dp"
+                tools:text="Join us for an exciting web development workshop where you'll learn the fundamentals of building modern websites. Perfect for beginners!"/>
+
+            <!-- RSVP Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rsvpButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="RSVP Now"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="28dp"
+                app:backgroundTint="@color/primary"
+                android:layout_marginTop="24dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

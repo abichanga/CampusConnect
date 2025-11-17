@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Event Image -->
+        <ImageView
+            android:id="@+id/eventImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="@color/image_placeholder"
+            tools:src="@tools:sample/backgrounds/scenic"/>
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Title and RSVP Badge Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/eventTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    tools:text="Web Development Workshop"/>
+
+                <TextView
+                    android:id="@+id/attendingBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attending"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/bg_attending_badge"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:visibility="gone"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Date -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_calendar"
+                    android:tint="@color/icon_tint"
+                    app:tint="@color/icon_tint"/>
+
+                <TextView
+                    android:id="@+id/eventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="6dp"
+                    tools:text="Mon, Nov 10 | 2:00 PM - 4:00 PM"/>
+            </LinearLayout>
+
+            <!-- Venue -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/icon_tint"
+                    app:tint="@color/icon_tint"/>
+
+                <TextView
+                    android:id="@+id/eventVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="6dp"
+                    tools:text="Computer Science Lab"/>
+            </LinearLayout>
+
+            <!-- Capacity and RSVP Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/eventCapacity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_tertiary"
+                    tools:text="45/50 attending"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/rsvpButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="RSVP"
+                    android:textSize="14sp"
+                    app:cornerRadius="20dp"
+                    app:backgroundTint="@color/primary"
+                    android:paddingHorizontal="24dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
