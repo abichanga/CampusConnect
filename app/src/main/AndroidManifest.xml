@@ -17,17 +17,17 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Mobileapp">
 
-        <!-- ADMIN MAIN -->
+        <!-- admin -->
         <activity
             android:name=".AdminMainActivity"
             android:exported="false" />
 
-        <!-- SIGN UP -->
+        <!-- signup -->
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
 
-        <!-- LOGIN (LAUNCHER) -->
+        <!-- login-launcher -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -37,12 +37,25 @@
             </intent-filter>
         </activity>
 
-        <!-- STUDENT MAIN  -->
+        <!-- student(main)  -->
         <activity
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/Theme.Mobileapp" />
+        <activity
+            android:name=".CreateEventActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdminEventsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ManageUsersActivity"
+            android:exported="false" />
+
+
 
     </application>
 

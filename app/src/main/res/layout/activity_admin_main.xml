@@ -28,4 +28,11 @@
         android:text="View Events"
         android:layout_marginTop="12dp" />
 
+    <Button
+        android:id="@+id/btnManageUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Users"
+        android:layout_marginTop="12dp" />
+
 </LinearLayout>
